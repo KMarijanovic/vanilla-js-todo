@@ -1,0 +1,124 @@
+html {
+	height: 100vh;
+	min-width: 600px;
+	background-image: linear-gradient(130deg, #ffffff, #4b7ce7);
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.container {
+	width: 600px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.logo {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	max-width: 500px;
+	padding: 1.5rem 0;
+	align-items: center;
+}
+
+.main {
+	padding: 20px;
+}
+
+form {
+	background-color: white;
+	padding: 15px;
+	border-radius: 5px;
+	display: flex;
+}
+
+input[type="text"] {
+	height: 30px;
+	outline: 0;
+	border: none;
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	flex-grow: 1;
+}
+
+button {
+	font-size: 1.5rem;
+	background-color: transparent;
+	outline: 0;
+	border: none;
+	color: grey;
+}
+
+button:hover {
+	color: black;
+}
+
+button[name="deleteButton"]:hover {
+	color: red;
+}
+
+.todoList {
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 10px 25px;
+	height: 100%;
+}
+
+ul {
+	padding: 0px;
+	list-style: none;
+}
+
+li {
+	display: flex;
+	align-items: center;
+
+	padding: 15px 15px;
+	font-size: 1rem;
+	color: black;
+
+	background-color: lightgray;
+	border-radius: 5px;
+	border: none;
+	margin: 5px;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+/*handling icons to work on click*/
+i {
+	pointer-events: none;
+}
+
+.todo-item {
+	flex-grow: 1;
+}
+
+.clearAll {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 3px;
+	cursor: pointer;
+	font-size: 1rem;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.clearAll:hover {
+	color: red;
+}
+
+.todo-list-item {
+	transition: all 0.5s ease-out;
+}
+
+.todo-list-item-fall {
+	transform: translateY(12rem) rotateZ(10deg);
+	opacity: 0;
+}
